@@ -74,4 +74,4 @@ if __name__=="__main__":
 
     # Average complexity will be O(n log n)
     # Worst case would be O(n^2) which can occur if each partition happens on the edge. Each resulting partitioned array will be n-1 and not halved.
-    # Space complexity is O(n) since it is an in-place algo
+    # Space complexity is O(log n) since it is an in-place algo with recursioin
