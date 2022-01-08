@@ -38,8 +38,8 @@ def partition(array, start, end):
         else:
             break
 
-    # Array high is now the low value
-    # Array start is not the high value
+    # First index is now the point lower than pivot
+    # Idx where high was less than pivot is now the pivot value
     array[start], array[high] = array[high], array[start]
 
     return high
@@ -75,5 +75,3 @@ if __name__=="__main__":
     # Average complexity will be O(n log n)
     # Worst case would be O(n^2) which can occur if each partition happens on the edge. Each resulting partitioned array will be n-1 and not halved.
     # Space complexity is O(n) since it is an in-place algo
-
-
