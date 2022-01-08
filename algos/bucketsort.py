@@ -22,13 +22,12 @@ def bucket_sort(array):
         # Insertion sort
         # [0.22, 0.36, 0.39, 0.27]
         for i in range(1, len(bucket)):
-            var = bucket[i] 
-            print(var)
-            j = i - 1
-            while (j >= 0 and var < bucket[j]): 
-                bucket[j+1] = bucket[j]
-                j = j - 1
-            bucket[j + 1] = var
+            curr_val = bucket[i] 
+            prev_idx = i - 1
+            while (prev_idx >= 0 and curr_val < bucket[prev_idx]): 
+                bucket[prev_idx+1] = bucket[prev_idx]
+                prev_idx = prev_idx - 1
+            bucket[prev_idx + 1] = curr_val
     
     final_output = []
     for i in range(len(array)):
