@@ -17,7 +17,7 @@ def insertion_sort(array):
             # move down the list
             prev_idx -= 1 
         
-        # Eventually curr val will not be less than previous or prev index will be greater than 0
+        # Eventualy curr val will not be less than previous or prev index will be greater than 0
         array[prev_idx + 1] = curr_val
 
 if __name__=="__main__":
@@ -26,3 +26,4 @@ if __name__=="__main__":
     print(array)
     insertion_sort(array)
     print(array)
+
